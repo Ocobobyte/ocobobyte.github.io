@@ -7,7 +7,7 @@ export const Navbar = () => {
       <img
         className="w-max h-max"
         src="/ocobobyte.github.io/ocobobyte-logo.svg"
-        alt=""
+        alt="ocobobyte logo"
       />
       <ul className="flex gap-12">
         <li>
