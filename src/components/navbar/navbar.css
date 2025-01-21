@@ -1,0 +1,18 @@
+nav {
+  border-bottom: 1px solid var(--chakra-colors-zircon-300);
+  padding: 16px 80px;
+
+  .chakra-stack {
+    .chakra-stack {
+      gap: var(--chakra-spacing-6);
+      a {
+        color: var(--chakra-colors-green-500);
+      }
+    }
+    .chakra-button {
+      border-radius: var(--chakra-radii-4xl);
+      background-color: var(--chakra-colors-green-500);
+      color: var(--chakra-colors-green-100);
+    }
+  }
+}
