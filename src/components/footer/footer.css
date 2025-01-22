@@ -1,0 +1,13 @@
+.footer{
+    background-color: var(--chakra-colors-green-500);
+    height: var(--chakra-sizes-32);
+    .footer-icons{
+        link{
+            Image{
+                fill: var(--chakra-colors-green-100);
+                
+            }
+        }
+        
+    }
+}
