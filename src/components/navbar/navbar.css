@@ -1,18 +1,44 @@
-nav {
+.navbar {
   border-bottom: 1px solid var(--chakra-colors-zircon-300);
-  padding: 16px 80px;
+  height: var(--chakra-sizes-20);
 
-  .chakra-stack {
-    .chakra-stack {
-      gap: var(--chakra-spacing-6);
+  .navbar-content {
+    .navbar-menu-links {
       a {
         color: var(--chakra-colors-green-500);
       }
     }
-    .chakra-button {
+    .navbar-collaborator-button {
       border-radius: var(--chakra-radii-4xl);
       background-color: var(--chakra-colors-green-500);
       color: var(--chakra-colors-green-100);
+    }
+    .navbar-hamburger-menu {
+      .chakra-menu__trigger {
+        background: transparent;
+      }
+      .navbar-hamburger-menu-content {
+        background-color: var(--chakra-colors-zircon-100);
+        position: absolute;
+        top: var(--chakra-spacing-20);
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        .chakra-menu__item {
+          color: var(--chakra-colors-green-500);
+          cursor: pointer;
+          justify-content: center;
+          font-weight: 700;
+          padding: 10px;
+        }
+        .chakra-menu__item.navbar-collaborator-button {
+          color: var(--chakra-colors-green-100);
+          margin: 10px 0;
+        }
+        a.chakra-menu__item[data-highlighted] {
+          background: transparent;
+        }
+      }
     }
   }
 }
