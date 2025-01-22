@@ -17,7 +17,12 @@
       .chakra-menu__trigger {
         background: transparent;
       }
+      .chakra-menu__trigger:is(:focus-visible, [data-focus-visible]) {
+        outline-style: none;
+      }
       .navbar-hamburger-menu-content {
+        border-radius: 0;
+        box-shadow: none;
         background-color: var(--chakra-colors-zircon-100);
         position: absolute;
         top: var(--chakra-spacing-20);

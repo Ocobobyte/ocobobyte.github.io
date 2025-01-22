@@ -1,10 +1,16 @@
-import { Box, Container, Flex, HStack, IconButton, Image, Link, MenuContent, MenuItem, MenuRoot, MenuTrigger } from "@chakra-ui/react";
+import { Box, Container, HStack, IconButton, Image, Link, MenuContent, MenuItem, MenuOpenChangeDetails, MenuRoot, MenuTrigger } from "@chakra-ui/react";
 import ocoboByteLogo from '/logo.svg';
 import { Button } from "../ui/button";
 import './navbar.css';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { VscChromeClose } from "react-icons/vsc";
+import { GrClose } from "react-icons/gr";
+
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [isMenuOpen, setMenuIsOpen] = useState(false);
+
   return (
     <Container fluid as="nav" className="navbar" display="flex" flexDirection="column" justifyContent="center" padding={{ lg: "1rem 5rem", lgDown: "1rem" }}>
       <HStack className="navbar-content" justify="space-between" flexDirection="row">
@@ -17,10 +23,10 @@ export const Navbar = () => {
         </HStack>
         <Button className="navbar-collaborator-button" hideBelow="md">Ser Colaborador</Button>
         <Box hideFrom="md" className="navbar-hamburger-menu">
-          <MenuRoot>
+          <MenuRoot onOpenChange={(details: MenuOpenChangeDetails) => { setMenuIsOpen(details.open) }}>
             <MenuTrigger asChild>
-              <IconButton aria-label="Search database" color="green.400">
-                <GiHamburgerMenu />
+              <IconButton aria-label="Open menu" color="green.400">
+                {isMenuOpen ? <GrClose /> : <GiHamburgerMenu />}
               </IconButton>
             </MenuTrigger>
             <MenuContent className="navbar-hamburger-menu-content">
