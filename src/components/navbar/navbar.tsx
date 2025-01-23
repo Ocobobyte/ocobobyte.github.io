@@ -1,3 +1,5 @@
+import './navbar.css';
+
 import {
   Box,
   Container,
@@ -14,9 +16,9 @@ import {
 import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
-import { Button } from '../ui/button';
-import './navbar.css';
+
 import ocoboByteLogo from '/logo.svg';
+import { Button } from '@/components/ui/button';
 
 export const Navbar = () => {
   const [isMenuOpen, setMenuIsOpen] = useState(false);

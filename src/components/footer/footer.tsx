@@ -1,8 +1,10 @@
-import { Container, HStack, Image, Link, Span } from '@chakra-ui/react';
-import facebookIcon from '../../assets/facebook.svg';
-import githubIcon from '../../assets/github.svg';
-import twitterIcon from '../../assets/twitter.svg';
 import './footer.css';
+
+import { Container, HStack, Image, Link, Span } from '@chakra-ui/react';
+
+import facebookIcon from '@/assets/facebook.svg';
+import githubIcon from '@/assets/github.svg';
+import twitterIcon from '@/assets/twitter.svg';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
