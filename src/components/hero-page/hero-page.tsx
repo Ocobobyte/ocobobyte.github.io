@@ -28,7 +28,7 @@ export const HeroPage = () => {
         className="hero-page-content"
         display="flex"
         justifyContent="space-between"
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: 'column', xl: 'row' }}
         gap={{ base: '2rem' }}
         alignItems="center"
       >
