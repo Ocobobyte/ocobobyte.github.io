@@ -1,15 +1,15 @@
-import { Navbar } from '@/components/navbar/navbar'
+import { Navbar } from '@/components/navbar/navbar';
 
-import { Footer } from './components/footer/footer'
+import { Footer } from './components/footer/footer';
 
 function App() {
   return (
     <>
       <Navbar />
 
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

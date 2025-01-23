@@ -1,29 +1,53 @@
-import { Box, Container, HStack, IconButton, Image, Link, MenuContent, MenuItem, MenuOpenChangeDetails, MenuRoot, MenuTrigger } from "@chakra-ui/react";
-import ocoboByteLogo from '/logo.svg';
-import { Button } from "../ui/button";
+import {
+  Box,
+  Container,
+  HStack,
+  IconButton,
+  Image,
+  Link,
+  MenuContent,
+  MenuItem,
+  MenuOpenChangeDetails,
+  MenuRoot,
+  MenuTrigger,
+} from '@chakra-ui/react';
+import { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { GrClose } from 'react-icons/gr';
+import { Button } from '../ui/button';
 import './navbar.css';
-import { GiHamburgerMenu } from "react-icons/gi";
-import { VscChromeClose } from "react-icons/vsc";
-import { GrClose } from "react-icons/gr";
-
-import { useState } from "react";
+import ocoboByteLogo from '/logo.svg';
 
 export const Navbar = () => {
   const [isMenuOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <Container fluid as="nav" className="navbar" display="flex" flexDirection="column" justifyContent="center" padding={{ lg: "1rem 5rem", lgDown: "1rem" }}>
+    <Container
+      fluid
+      as="nav"
+      className="navbar"
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      padding={{ lg: '1rem 5rem', lgDown: '1rem' }}
+    >
       <HStack className="navbar-content" justify="space-between" flexDirection="row">
         <Image className="navbar-logo" src={ocoboByteLogo}></Image>
-        <HStack className="navbar-menu-links" hideBelow="md" gap={{ lg: "6", lgDown: "4" }}>
+        <HStack className="navbar-menu-links" hideBelow="md" gap={{ lg: '6', lgDown: '4' }}>
           <Link href="#">Quiénes Somos</Link>
           <Link href="#">Sponsors</Link>
           <Link href="#">Eventos</Link>
           <Link href="#">Organizadores</Link>
         </HStack>
-        <Button className="navbar-collaborator-button" hideBelow="md">Ser Colaborador</Button>
+        <Button className="navbar-collaborator-button" hideBelow="md">
+          Ser Colaborador
+        </Button>
         <Box hideFrom="md" className="navbar-hamburger-menu">
-          <MenuRoot onOpenChange={(details: MenuOpenChangeDetails) => { setMenuIsOpen(details.open) }}>
+          <MenuRoot
+            onOpenChange={(details: MenuOpenChangeDetails) => {
+              setMenuIsOpen(details.open);
+            }}
+          >
             <MenuTrigger asChild>
               <IconButton aria-label="Open menu" color="green.400">
                 {isMenuOpen ? <GrClose /> : <GiHamburgerMenu />}
@@ -51,4 +75,4 @@ export const Navbar = () => {
       </HStack>
     </Container>
   );
-}
+};
