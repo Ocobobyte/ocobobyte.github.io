@@ -1,0 +1,14 @@
+.hero-page {
+  background-color: var(--chakra-colors-green-100);
+  /* height: var(--chakra-sizes-32); */
+  .hero-page-content {
+    .description {
+      .heading-large {
+        color: var(--chakra-colors-green-500);
+      }
+      .paragraph-large {
+        color: var(--chakra-colors-green-500);
+      }
+    }
+  }
+}
