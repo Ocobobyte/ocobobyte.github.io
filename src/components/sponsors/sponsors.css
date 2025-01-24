@@ -1,0 +1,26 @@
+.sponsors {
+  background-color: var(--chakra-colors-green-500);
+  .sponsors-contain {
+    .join-sponsor {
+      .join-sponsor-badge {
+        border-radius: var(--chakra-radii-4xl);
+        background-color: var(--chakra-colors-green-400);
+      }
+      .join-sponsor-text {
+        color: var(--chakra-colors-zircon-100);
+      }
+      .join-sponsors-button {
+        border: 2px solid;
+        border-color: var(--chakra-colors-zircon-100);
+        border-radius: var(--chakra-radii-4xl);
+        background-color: var(--chakra-colors-green-500);
+        color: var(--chakra-colors-green-100);
+      }
+    }
+    .sponsors-brands {
+      .sponsors-brands-text {
+        color: var(--chakra-colors-zircon-100);
+      }
+    }
+  }
+}
