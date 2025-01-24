@@ -1,10 +1,8 @@
 .hero-page {
-  background-color: var(--chakra-colors-green-100);
-  /* height: var(--chakra-sizes-32); */
   .hero-page-content {
     .description {
       .heading-large {
-        color: var(--chakra-colors-green-500);
+        color: var(--chakra-colors-green-600);
       }
       .paragraph-large {
         color: var(--chakra-colors-green-500);

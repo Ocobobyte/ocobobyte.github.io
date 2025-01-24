@@ -17,7 +17,7 @@ export const Footer = () => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      padding={{ lg: '1rem 1rem', lgDown: '2rem' }}
+      padding={{ lg: '1.5rem 5rem', lgDown: '1.5rem 1.25rem' }}
       gap={{ lg: '2rem', lgDown: '4' }}
     >
       <HStack

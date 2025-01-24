@@ -1,4 +1,4 @@
-import './hero-Page.css';
+import './hero-page.css';
 
 import { Container, Heading, HStack, Image, Span, Text, VStack } from '@chakra-ui/react';
 
@@ -17,12 +17,13 @@ export const HeroPage = () => {
 
   return (
     <Container
+      fluid
       className="hero-page"
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      alignItems="center"
-      padding={{ base: '5rem 2rem', md: '5rem' }}
+      padding={{ lg: '5rem', lgDown: '2.5rem 1.5rem' }}
+      margin={0}
     >
       <HStack
         className="hero-page-content"

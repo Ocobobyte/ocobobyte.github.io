@@ -31,7 +31,7 @@ export const Navbar = () => {
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      padding={{ lg: '1rem 5rem', lgDown: '1rem' }}
+      padding={{ lg: '1rem 5rem', lgDown: '1rem 1.25rem' }}
     >
       <HStack className="navbar-content" justify="space-between" flexDirection="row">
         <Image className="navbar-logo" src={ocoboByteLogo}></Image>
