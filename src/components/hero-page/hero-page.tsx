@@ -26,7 +26,7 @@ export const HeroPage = () => {
       margin={0}
     >
       <HStack
-        className="hero-page-content"
+        className="hero-page-contain"
         display="flex"
         justifyContent="space-between"
         flexDirection={{ base: 'column', xl: 'row' }}

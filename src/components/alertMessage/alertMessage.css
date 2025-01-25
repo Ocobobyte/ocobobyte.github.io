@@ -1,0 +1,7 @@
+.alertMessage {
+  .alertMessage-contain {
+    /* background-color: var(--chakra-colors-green-500); */
+    background-color: black;
+    border-radius: 8px;
+  }
+}

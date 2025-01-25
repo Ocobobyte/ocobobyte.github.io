@@ -1,0 +1,22 @@
+.contain-cards-events {
+  .card-event {
+    border: none;
+    background-color: var(--chakra-colors-zircon-100);
+    .contain-card-event {
+      .tittle-event {
+        font-weight: bold;
+        color: var(--chakra-colors-green-500);
+      }
+      .contain-date {
+        .date-text {
+          color: #546177;
+        }
+      }
+      .contain-address {
+        .address-text {
+          color: #546177;
+        }
+      }
+    }
+  }
+}

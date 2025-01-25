@@ -1,0 +1,12 @@
+.new-events {
+  .new-events-contain {
+    .new-events-tittle {
+      .schedule-tittle {
+        color: var(--chakra-colors-green-600);
+      }
+      .text-events {
+        color: var(--chakra-colors-green-600);
+      }
+    }
+  }
+}

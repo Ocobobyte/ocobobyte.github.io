@@ -19,11 +19,11 @@ export const Sponsors = () => {
         className="sponsors-contain"
         display="flex"
         justifyContent="space-between"
-        gap={{ base: '2rem', md: '8rem' }}
+        gap={{ base: '2rem', md: '5rem' }}
         flexDirection={{ base: 'column', md: 'row' }}
       >
         <VStack
-          flex={1}
+          flex={1.5}
           className="join-sponsor"
           fontSize="16px"
           textAlign={{ base: 'center', md: 'left' }}
@@ -33,11 +33,17 @@ export const Sponsors = () => {
           <Badge className="join-sponsor-badge" padding="0.5rem 1rem">
             Sponsors
           </Badge>
-          <Text className="join-sponsor-text">
+          <Text
+            className="join-sponsor-text"
+            fontStyle="italic"
+            fontSize={{ base: '20px', md: '20px' }}
+          >
             ¡Únete a nuestra red de patrocinadores y sé parte de impulsar el crecimiento y
             desarrollo de nuestra comunidad!
           </Text>
-          <Button className="join-sponsors-button" width={{base: '100%', md: 'auto'}}>Ser Patrocinador</Button>
+          <Button className="join-sponsors-button" width={{ base: '100%', md: 'auto' }}>
+            Ser Patrocinador
+          </Button>
         </VStack>
         <VStack
           className="sponsors-brands"
@@ -46,7 +52,11 @@ export const Sponsors = () => {
           flex={3}
           gap={{ base: '1rem' }}
         >
-          <Text className="sponsors-brands-text" textAlign={{ base: 'center', md: 'left' }}>
+          <Text
+            className="sponsors-brands-text"
+            textAlign={{ base: 'center', md: 'left' }}
+            fontSize={{ base: '16px', md: '16px' }}
+          >
             Respaldados por patrocinadores de todo el mundo.
           </Text>
           <Image
