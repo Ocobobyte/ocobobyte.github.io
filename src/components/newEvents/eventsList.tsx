@@ -38,7 +38,7 @@ export const EventsList = () => {
       width="100%"
       className="contain-cards-events"
       display="flex"
-      justifyContent="space-between"
+      justifyContent={{ base: 'center', md: 'space-between' }}
       gap={'1.25rem'}
       flexWrap="wrap"
     >
