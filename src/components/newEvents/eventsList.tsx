@@ -29,7 +29,7 @@ export const EventsList = () => {
     {
       image: imageEvent,
       tittle: 'Public Speaking Practice Online V',
-      date: 'Agosto 14, 2024 - Agosto 16, 2024',
+      date: 'Agost 14, 2024 - Agost 16, 2024',
       address: 'Bogota, Universidad de los Andes',
     },
   ];
@@ -41,13 +41,13 @@ export const EventsList = () => {
       justifyContent={{ base: 'center', md: 'space-between' }}
       gap={'1.25rem'}
       flexWrap="wrap"
+      alignItems="stretch"
     >
       {eventsList.map((event) => (
         <Card.Root
           className="card-event"
           key={event.tittle}
           display="flex"
-          justifyContent="center"
           alignItems="center"
           width={{ base: '320px', md: '287px' }}
         >
