@@ -35,10 +35,10 @@ export const EventsList = () => {
   ];
   return (
     <HStack
+      width="100%"
       className="contain-cards-events"
       display="flex"
-      justifyContent="center"
-      alignItems="stretch"
+      justifyContent="space-between"
       gap={'1.25rem'}
       flexWrap="wrap"
     >

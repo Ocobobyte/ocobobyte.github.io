@@ -29,7 +29,12 @@ export const NewEvents = () => {
             aprende de expertos!
           </Text>
         </VStack>
-        <HStack className="new-events-list" display="flex">
+        <HStack 
+        width="100%" 
+        className="new-events-list" 
+        display="flex" 
+        justifyContent="space-between"
+        >
           <EventsList />
         </HStack>
       </VStack>
