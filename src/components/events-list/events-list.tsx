@@ -1,5 +1,3 @@
-import './eventsList.css';
-
 import { Card, HStack, Image, Text, VStack } from '@chakra-ui/react';
 
 import calendar from '../../assets/calendar_month.svg';
@@ -36,9 +34,10 @@ export const EventsList = () => {
   return (
     <HStack
       width="100%"
+      maxWidth="1210px"
       className="contain-cards-events"
       display="flex"
-      justifyContent={{ base: 'center', md: 'space-between' }}
+      justifyContent="center"
       gap={'1.25rem'}
       flexWrap="wrap"
       alignItems="stretch"
@@ -46,6 +45,8 @@ export const EventsList = () => {
       {eventsList.map((event) => (
         <Card.Root
           className="card-event"
+          border="none"
+          backgroundColor="zircon.100"
           key={event.tittle}
           display="flex"
           alignItems="center"
@@ -66,18 +67,18 @@ export const EventsList = () => {
             padding={'1rem'}
             gap={'1.5rem'}
           >
-            <Text className="tittle-event" fontSize={{ base: '18px', md: '18px' }}>
+            <Text fontSize={{ base: '18px', md: '18px' }}>
               {event.tittle}
             </Text>
-            <HStack className="contain-date" display="flex" justifyContent="left">
+            <HStack display="flex" justifyContent="left">
               <Image src={calendar} />
-              <Text className="date-text" fontSize={{ base: '14px', md: '14px' }}>
+              <Text color="#546177" fontSize={{ base: '14px', md: '14px' }}>
                 {event.date}
               </Text>
             </HStack>
-            <HStack className="contain-address">
+            <HStack>
               <Image src={location} />
-              <Text className="address-text" fontSize={{ base: '14px', md: '14px' }}>
+              <Text color="#546177" fontSize={{ base: '14px', md: '14px' }}>
                 {event.address}
               </Text>
             </HStack>

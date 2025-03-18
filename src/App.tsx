@@ -1,9 +1,9 @@
 import { Navbar } from '@/components/navbar/navbar';
 
-import { AlertMessage } from './components/alertMessage/alertMessage';
+import { AlertMessage } from './components/alert-message/alert-message';
 import { Footer } from './components/footer/footer';
 import { HeroPage } from './components/hero-page/hero-page';
-import { NewEvents } from './components/newEvents/newEvents';
+import { Events } from './components/events/events';
 import { Sponsors } from './components/sponsors/sponsors';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <HeroPage />
       <Sponsors />
-      <NewEvents />
+      <Events />
       <AlertMessage />
       <Footer />
     </>
