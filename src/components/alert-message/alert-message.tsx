@@ -1,12 +1,9 @@
-import './alertMessage.css';
-
 import { Container, Heading, HStack } from '@chakra-ui/react';
 
 export const AlertMessage = () => {
   return (
     <Container
       fluid
-      className="alertMessage"
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -14,7 +11,8 @@ export const AlertMessage = () => {
       margin={0}
     >
       <HStack
-        className="alertMessage-contain"
+        backgroundColor="black"
+        borderRadius={8}
         display="flex"
         justifyContent="center"
         padding={'1.5rem'}

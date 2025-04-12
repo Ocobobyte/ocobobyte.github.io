@@ -1,5 +1,3 @@
-import './footer.css';
-
 import { Container, HStack, Image, Link, Span } from '@chakra-ui/react';
 
 import facebookIcon from '@/assets/facebook.svg';
@@ -8,27 +6,27 @@ import twitterIcon from '@/assets/twitter.svg';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
+
   return (
     <Container
       fluid
       as="footer"
-      className="footer"
+      backgroundColor='green.500'
       display="flex"
       flexDirection="column"
+      h={32}
       justifyContent="center"
       alignItems="center"
       padding={{ lg: '1.5rem 5rem', lgDown: '1.5rem 1.25rem' }}
       gap={{ lg: '2rem', lgDown: '4' }}
     >
       <HStack
-        className="footer-icons"
         justify="center"
         flexDirection="row"
         gap={{ lg: '16px', lgDown: '4' }}
       >
         <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <Image src={facebookIcon} alt="Facebook" boxSize="24px" />
-          {/* <FacebookIcon/> */}
         </Link>
         <Link href="https://www.github.com" target="_blank" rel="noopener noreferrer">
           <Image src={githubIcon} alt="Github" boxSize="24px" />

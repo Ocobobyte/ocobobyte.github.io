@@ -1,5 +1,3 @@
-import './navbar.css';
-
 import {
   Box,
   Container,
@@ -27,21 +25,31 @@ export const Navbar = () => {
     <Container
       fluid
       as="nav"
-      className="navbar"
+      borderBottom="1px solid"
+      borderColor="zircon.300"
+      h={20}
       display="flex"
       flexDirection="column"
       justifyContent="center"
       padding={{ lg: '1rem 5rem', lgDown: '1rem 1.25rem' }}
     >
-      <HStack className="navbar-content" justify="space-between" flexDirection="row">
-        <Image className="navbar-logo" src={ocoboByteLogo}></Image>
-        <HStack className="navbar-menu-links" hideBelow="md" gap={{ lg: '6', lgDown: '4' }}>
-          <Link href="#">Quiénes Somos</Link>
-          <Link href="#">Sponsors</Link>
-          <Link href="#">Eventos</Link>
-          <Link href="#">Organizadores</Link>
+      <HStack justify="space-between" flexDirection="row">
+        <Image src={ocoboByteLogo}></Image>
+        <HStack hideBelow="md" gap={{ lg: '6', lgDown: '4' }}>
+          <Link color="green.500" href="#">
+            Quiénes Somos
+          </Link>
+          <Link color="green.500" href="#">
+            Sponsors
+          </Link>
+          <Link color="green.500" href="#">
+            Eventos
+          </Link>
+          <Link color="green.500" href="#">
+            Organizadores
+          </Link>
         </HStack>
-        <Button className="navbar-collaborator-button" hideBelow="md">
+        <Button borderRadius="4xl" backgroundColor="green.500" color="green.100" hideBelow="md">
           Ser Colaborador
         </Button>
         <Box hideFrom="md" className="navbar-hamburger-menu">
@@ -50,26 +58,98 @@ export const Navbar = () => {
               setMenuIsOpen(details.open);
             }}
           >
-            <MenuTrigger asChild>
+            <MenuTrigger
+              _focusVisible={{
+                outlineStyle: 'none',
+              }}
+              backgroundColor="transparent"
+              asChild
+            >
               <IconButton aria-label="Open menu" color="green.400">
                 {isMenuOpen ? <GrClose /> : <GiHamburgerMenu />}
               </IconButton>
             </MenuTrigger>
-            <MenuContent className="navbar-hamburger-menu-content">
-              <MenuItem asChild value="quienes_somos">
+            <MenuContent
+              borderRadius={0}
+              boxShadow="none"
+              backgroundColor="zircon.100"
+              position="absolute"
+              top={20}
+              left={0}
+              width="100%"
+              padding="20px"
+            >
+              <MenuItem
+                asChild
+                _highlighted={{
+                  backgroundColor: 'transparent',
+                }}
+                color="green.500"
+                cursor="pointer"
+                justifyContent="center"
+                fontWeight={700}
+                padding="10px"
+                value="quienes_somos"
+              >
                 <Link href="#q">Quiénes Somos</Link>
               </MenuItem>
-              <MenuItem asChild value="sponsors">
+              <MenuItem
+                asChild
+                _highlighted={{
+                  backgroundColor: 'transparent',
+                }}
+                color="green.500"
+                cursor="pointer"
+                justifyContent="center"
+                fontWeight={700}
+                padding="10px"
+                value="sponsors"
+              >
                 <Link href="#s">Sponsors</Link>
               </MenuItem>
-              <MenuItem asChild value="eventos">
+              <MenuItem
+                asChild
+                _highlighted={{
+                  backgroundColor: 'transparent',
+                }}
+                color="green.500"
+                cursor="pointer"
+                justifyContent="center"
+                fontWeight={700}
+                padding="10px"
+                value="eventos"
+              >
                 <Link href="#e">Eventos</Link>
               </MenuItem>
-              <MenuItem asChild value="organizadores">
+              <MenuItem
+                asChild
+                _highlighted={{
+                  backgroundColor: 'transparent',
+                }}
+                color="green.500"
+                cursor="pointer"
+                justifyContent="center"
+                fontWeight={700}
+                padding="10px"
+                value="organizadores"
+              >
                 <Link href="#o">Organizadores</Link>
               </MenuItem>
-              <MenuItem asChild value="organizadores">
-                <Button className="navbar-collaborator-button">Ser Colaborador</Button>
+              <MenuItem
+                asChild
+                _highlighted={{
+                  backgroundColor: 'transparent',
+                }}
+                color="green.500"
+                cursor="pointer"
+                justifyContent="center"
+                fontWeight={700}
+                padding="10px"
+                value="organizadores"
+              >
+                <Button color="green.100" margin="10px 0">
+                  Ser Colaborador
+                </Button>
               </MenuItem>
             </MenuContent>
           </MenuRoot>

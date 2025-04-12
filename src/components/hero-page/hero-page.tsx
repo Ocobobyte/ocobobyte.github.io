@@ -1,5 +1,3 @@
-import './hero-page.css';
-
 import { Container, Heading, HStack, Image, Span, Text, VStack } from '@chakra-ui/react';
 
 import heroPageMan from '../../assets/hero_page_man.png';
@@ -18,7 +16,6 @@ export const HeroPage = () => {
   return (
     <Container
       fluid
-      className="hero-page"
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -26,7 +23,6 @@ export const HeroPage = () => {
       margin={0}
     >
       <HStack
-        className="hero-page-contain"
         display="flex"
         justifyContent="space-between"
         flexDirection={{ base: 'column', xl: 'row' }}
@@ -40,6 +36,7 @@ export const HeroPage = () => {
         >
           <Heading
             className="heading-large"
+            color='green.600'
             fontStyle="italic"
             fontSize={{ base: '32px', md: '64px' }}
             textAlign={{ base: 'center', md: 'left' }}
@@ -48,7 +45,7 @@ export const HeroPage = () => {
             Comunidad de desarrolladores en Ibagué
           </Heading>
           <Text
-            className="paragraph-large"
+            color='green.500'
             fontSize="16px"
             textAlign={{ base: 'center', md: 'left' }}
           >
